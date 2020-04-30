@@ -1,4 +1,4 @@
-const Graph = require('./Graphs')
+onst Graph = require('./Graphs')
 
 function createGraph(vertices, edges) {
     let graph = new Graph
@@ -13,10 +13,10 @@ function createGraph(vertices, edges) {
 }
 
 
-
-
-let vertices = ["A", "B", "C", "D"]
-let edges = [["A", "B", 2], ["A", "C", 1], ["B", "E", 1], ["C", "D", 3]]
-let graph1 = createGraph(vertices, edges)
+let vertices1 = ["A", "B", "C", "D", "E"]
+let edges1 = [["A", "B", 2], ["A", "C", 1], ["B", "E", 1], ["B", "C", 3], ["C", "D", 3], ["D", "E", 4]]
+let graph1 = createGraph(vertices1, edges1)
 
 console.log(graph1)
+
+module.exports = createGraph
